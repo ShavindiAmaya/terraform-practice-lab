@@ -1,0 +1,49 @@
+QUICK STEPS
+
+1. Extract this ZIP.
+2. Open terminal inside the terraform-practice-lab folder.
+3. Check Terraform:
+   terraform --version
+
+4. Make sure AWS credentials are configured on your PC.
+   DO NOT put access keys inside these files.
+
+5. Run:
+   terraform init
+   terraform validate
+   terraform plan
+   terraform apply
+
+6. Type:
+   yes
+
+7. Take screenshots of:
+   - main.tf
+   - terraform plan
+   - terraform apply success
+   - AWS EC2 instance running
+
+8. Clean up:
+   terraform destroy
+
+9. Type:
+   yes
+
+10. Take destroy success screenshot.
+
+11. Push to GitHub:
+   git init
+   git add .
+   git commit -m "feat: add Terraform AWS EC2 practice lab"
+   git branch -M main
+
+12. Create empty GitHub repository:
+   terraform-practice-lab
+
+13. Then:
+   git remote add origin https://github.com/ShavindiAmaya/terraform-practice-lab.git
+   git push -u origin main
+
+IMPORTANT:
+- Never commit AWS access keys or secret keys.
+- If terraform plan says the AMI ID is invalid, update the ami_id in variables.tf for your AWS region.
